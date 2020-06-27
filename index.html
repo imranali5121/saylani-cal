@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="cal">
+            <h4>Casio</h4>
+            <div class="cal-screen">
+                <input type="text" id="scr" placeholder="0">
+            </div>
+            <div class="cal-body">
+                <button value="7" onclick="screen.value+=this.value">7</button>
+                <button value="8" onclick="screen.value+=this.value">8</button>
+                <button value="9" onclick="screen.value+=this.value">9</button>
+                <button value="-" onclick="screen.value+=this.value" class="sign">-</button>
+                <br>
+                <button value="4" onclick="screen.value+=this.value">4</button>
+                <button value="5" onclick="screen.value+=this.value">5</button>
+                <button value="6" onclick="screen.value+=this.value">6</button>
+                <button value="*" onclick="screen.value+=this.value" class="sign">*</button>
+                <br>
+                <button value="1" onclick="screen.value+=this.value">1</button>
+                <button value="2" onclick="screen.value+=this.value">2</button>
+                <button value="3" onclick="screen.value+=this.value">3</button>
+                <button value="+" onclick="screen.value+=this.value" class="sign">+</button>
+                <br>
+                <button value="0" onclick="screen.value+=this.value">0</button>
+                <button onclick="screen.value=''" class="sign">c</button>
+                <button value="/" onclick="screen.value+=this.value" class="sign">/</button>
+                <button onclick="screen.value=eval(screen.value)" class="sign">=</button>
+                <br>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="app.js">
+    </script>
+</body>
+
+</html>
